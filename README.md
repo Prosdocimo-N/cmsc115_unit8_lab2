@@ -4,7 +4,7 @@
 Nicholas Prosdocimo
 
 ## GitHub Repository URL
-Paste your GitHub Unit 8 Lab 2 repository URL here.
+https://github.com/Prosdocimo-N/cmsc115_unit8_lab2
 
 ---
 
@@ -35,13 +35,13 @@ test file becomes available, it should supersede the reconstructed version.
 # Iteration 1
 
 ## What does the AI-generated code do?
--
+- The initial AI-generated implementation loops through the array and adds each integer to a running total, then returns the sum.
 
 ## Which tests passed or failed?
--
+- The single-element test passed because the sum of a one-element array is also that element. The tests expecting the largest value and the empty-array behavior failed.
 
 ## What surprised you?
--
+- The original AI prompt did not explain what "findResult" was supposed to calculate, so the generated implementation could be logically valid while still failing most of the JUnit tests. This showed how important specific requirements are when prompting an AI coding tool.
 
 ## Commit message used
 `Iteration 1: AI-generated implementation`
