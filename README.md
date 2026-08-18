@@ -51,13 +51,13 @@ test file becomes available, it should supersede the reconstructed version.
 # Iteration 2
 
 ## What changed?
--
+- The method was changed from summing every value to searching the array for the largest integer.
 
 ## What improved?
--
+- The new implementation correctly returned the largest value for arrays containing multiple values, negative values, and a single value.
 
 ## What still failed and why?
--
+- The empty-array test still failed because the method immediately accesses values[0]. An empty array does not contain an element at index 0, so the method cannot initialize the largest value that way when the array is empty.
 
 ## Commit message used
 `Iteration 2: largest value implementation`

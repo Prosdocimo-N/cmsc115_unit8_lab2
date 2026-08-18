@@ -1,13 +1,15 @@
 public class NumberProgram {
 
     public static int findResult(int[] values) {
-        int result = 0;
+        int largest = values[0];
 
-        for (int value : values) {
-            result += value;
+        for (int i = 1; i < values.length; i++) {
+            if (values[i] > largest) {
+                largest = values[i];
+            }
         }
 
-        return result;
+        return largest;
     }
 
     public static void main(String[] args) {
