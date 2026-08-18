@@ -67,13 +67,13 @@ test file becomes available, it should supersede the reconstructed version.
 # Iteration 3
 
 ## What is the final behavior of the program?
--
+- The final version returns the largest integer contained in the array. If the array is empty, it returns Integer.MIN_VALUE.
 
 ## What was fixed?
--
+- I added a check for an empty array before attempting to access values[0]. This prevents the array-index error and provides the required Integer.MIN_VALUE result.
 
 ## What did you learn?
--
+- I learned that increasingly specific requirements produce more accurate AI-generated code. The JUnit tests also made it easy to identify exactly which edge case was still missing after Iteration 2.
 
 ## Commit message used
 `Iteration 3: final version passing all tests`
@@ -83,13 +83,13 @@ test file becomes available, it should supersede the reconstructed version.
 # Final Reflection
 
 ## How did the AI-generated implementation change across the three iterations?
--
+- The first implementation interpreted the vague prompt by calculating the sum of the array. The second iteration used a more specific prompt and changed the method to return the largest value. The final iteration added explicit handling for an empty array by returning Integer.MIN_VALUE.
 
 ## How did the JUnit tests help guide the changes?
--
+- The JUnit tests provided immediate feedback about which behaviors were correct and which requirements were still missing. Each test run helped narrow down the changes needed for the next iteration.
 
 ## What did you learn about giving an AI tool more specific requirements?
--
+- I learned that the quality and accuracy of AI-generated code depends heavily on how specific the prompt is. A vague request can produce valid code that does not solve the intended problem, while clearer requirements produce results that better match the expected behavior.
 
 ## What did you learn about using Git commits to track iterative development?
--
+- Git commits created a clear history of each implementation. I could see how the program changed from the initial version through each refinement, which makes debugging, reviewing changes, and returning to an earlier version much easier.
